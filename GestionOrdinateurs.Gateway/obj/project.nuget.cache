@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "VG8w2TCZoXU=",
+  "success": true,
+  "projectFilePath": "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\GestionOrdinateurs.Gateway\\GestionOrdinateurs.Gateway.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Luc\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.13\\microsoft.aspnetcore.openapi.10.0.13.nupkg.sha512",
+    "C:\\Users\\Luc\\.nuget\\packages\\microsoft.openapi\\2.12.2\\microsoft.openapi.2.12.2.nupkg.sha512",
+    "C:\\Users\\Luc\\.nuget\\packages\\system.io.hashing\\8.0.0\\system.io.hashing.8.0.0.nupkg.sha512",
+    "C:\\Users\\Luc\\.nuget\\packages\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

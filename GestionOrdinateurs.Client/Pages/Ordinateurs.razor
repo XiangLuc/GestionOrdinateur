@@ -1,0 +1,48 @@
+@page "/ordinateurs"
+@attribute [Authorize]
+
+@inject IHttpClientFactory Factory
+
+<PageTitle>Ordinateurs</PageTitle>
+
+<h1>Liste des ordinateurs</h1>
+
+@if (ordinateurs == null)
+{
+    <p><em>Chargement...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prix</th>
+                <th>Devise</th>
+                <th>Vendu</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ordinateur in ordinateurs)
+            {
+                <tr>
+                    <td>@ordinateur.Nom</td>
+                    <td>@ordinateur.Prix</td>
+                    <td>EUR</td>
+                    <td>@(ordinateur.Vendu ? "Oui" : "Non")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code
+{
+    private List<OrdinateurDto>? ordinateurs;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = Factory.CreateClient("Gateway");
+        ordinateurs = await client.GetFromJsonAsync<List<OrdinateurDto>>("ordinateurs");
+    }
+}

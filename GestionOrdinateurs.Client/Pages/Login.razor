@@ -1,0 +1,45 @@
+@page "/login"
+
+@inject IHttpClientFactory Factory
+@inject ISessionStorageService SessionStorage
+@inject NavigationManager Navigation
+@inject JwtAuthenticationStateProvider AuthProvider
+
+<PageTitle>Connexion</PageTitle>
+
+<h3>Connexion</h3>
+
+<InputText @bind-Value="UserLogin" class="form-control" placeholder="Login" />
+
+<button class="btn btn-primary mt-2" @onclick="SeConnecter">
+    Se connecter
+</button>
+
+@if (!string.IsNullOrEmpty(Erreur))
+{
+    <div class="alert alert-danger mt-2">@Erreur</div>
+}
+
+@code
+{
+    private string UserLogin = "";
+    private string Erreur = "";
+
+    private async Task SeConnecter()
+    {
+        Erreur = "";
+        var client = Factory.CreateClient("AuthentificationApi");
+        var response = await client.PostAsync($"authentication/login?login={UserLogin}", null);
+
+        if (!response.IsSuccessStatusCode)
+        {
+            Erreur = $"L'utilisateur {UserLogin} n'existe pas";
+            return;
+        }
+
+        var token = await response.Content.ReadAsStringAsync();
+        await SessionStorage.SetItemAsync("jwtToken", token);
+        AuthProvider.NotifyUserAuthentication(token);
+        Navigation.NavigateTo("/");
+    }
+}

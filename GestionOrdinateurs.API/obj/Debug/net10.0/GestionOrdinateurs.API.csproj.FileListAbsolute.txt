@@ -1,0 +1,8 @@
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\GestionOrdinateurs.API\appsettings.Development.json
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\GestionOrdinateurs.API\appsettings.json
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\GestionOrdinateurs.API\GestionOrdinateurs.API.staticwebassets.endpoints.json
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\GestionOrdinateurs.API\GestionOrdinateurs.API.exe
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\GestionOrdinateurs.API\GestionOrdinateurs.API.deps.json
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\GestionOrdinateurs.API\GestionOrdinateurs.API.runtimeconfig.json
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\GestionOrdinateurs.API\GestionOrdinateurs.API.dll
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\GestionOrdinateurs.API\GestionOrdinateurs.API.pdb

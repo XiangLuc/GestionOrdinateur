@@ -1,0 +1,48 @@
+@page "/reparations"
+@attribute [Authorize]
+
+@inject IHttpClientFactory Factory
+
+<PageTitle>Réparations</PageTitle>
+
+<h1>Historique des réparations</h1>
+
+@if (historique == null)
+{
+    <p><em>Chargement...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Ordinateur</th>
+                <th>Technicien</th>
+                <th>Type de réparation</th>
+                <th>Date d'intervention</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reparation in historique)
+            {
+                <tr>
+                    <td>@reparation.NomOrdinateur</td>
+                    <td>@reparation.Technicien</td>
+                    <td>@reparation.TypeReparation</td>
+                    <td>@reparation.DateIntervention.ToString("dd/MM/yyyy HH:mm")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code
+{
+    private List<HistoriqueReparationDto>? historique;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = Factory.CreateClient("Gateway");
+        historique = await client.GetFromJsonAsync<List<HistoriqueReparationDto>>("reparations/historique");
+    }
+}

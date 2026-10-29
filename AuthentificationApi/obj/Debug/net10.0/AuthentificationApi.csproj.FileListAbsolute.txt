@@ -1,0 +1,8 @@
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\appsettings.Development.json
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\appsettings.json
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\AuthentificationApi.staticwebassets.endpoints.json
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\AuthentificationApi.exe
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\AuthentificationApi.deps.json
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\AuthentificationApi.runtimeconfig.json
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\AuthentificationApi.dll
+C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\AuthentificationApi.pdb

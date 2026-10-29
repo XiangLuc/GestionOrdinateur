@@ -1,0 +1,42 @@
+@GestionOrdinateurs.API_HostAddress = http://localhost:5299
+
+POST {{GestionOrdinateurs.API_HostAddress}}/api/ordinateurs
+Content-Type: application/json
+
+{
+  "nom": "Dell XPS",
+  "etat": 0,
+  "stock": 3,
+  "prix": 1500,
+  "caracteristiques": { "ramGo": 16, "stockageGo": 512, "typeOrdi": 0, "marque": "Dell", "processeur": "Intel i7" }
+}
+
+###
+
+GET {{GestionOrdinateurs.API_HostAddress}}/api/ordinateurs
+
+###
+
+POST {{GestionOrdinateurs.API_HostAddress}}/api/reparations/SimulerReparation
+
+###
+
+GET {{GestionOrdinateurs.API_HostAddress}}/api/reparations/historique
+
+###
+
+GET {{GestionOrdinateurs.API_HostAddress}}/api/ordinateurs/7/diagnostic
+
+###
+
+GET {{GestionOrdinateurs.API_HostAddress}}/api/ordinateurs/statistiques
+
+###
+
+GET {{GestionOrdinateurs.API_HostAddress}}/api/ordinateurs/inventaire/Dell XPS
+
+###
+
+GET {{GestionOrdinateurs.API_HostAddress}}/api/ordinateurs/inventaire/id/9
+
+###
