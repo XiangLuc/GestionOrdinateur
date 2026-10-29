@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\AuthentificationApi\\AuthentificationApi.csproj": {}
+    "D:\\dev\\cs\\GestionOrdinateurs\\AuthentificationApi\\AuthentificationApi.csproj": {}
   },
   "projects": {
-    "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\AuthentificationApi\\AuthentificationApi.csproj": {
+    "D:\\dev\\cs\\GestionOrdinateurs\\AuthentificationApi\\AuthentificationApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\AuthentificationApi\\AuthentificationApi.csproj",
+        "projectUniqueName": "D:\\dev\\cs\\GestionOrdinateurs\\AuthentificationApi\\AuthentificationApi.csproj",
         "projectName": "AuthentificationApi",
-        "projectPath": "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\AuthentificationApi\\AuthentificationApi.csproj",
-        "packagesPath": "C:\\Users\\Luc\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\AuthentificationApi\\obj\\",
+        "projectPath": "D:\\dev\\cs\\GestionOrdinateurs\\AuthentificationApi\\AuthentificationApi.csproj",
+        "packagesPath": "C:\\Users\\xiang\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\cs\\GestionOrdinateurs\\AuthentificationApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Luc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\xiang\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -27,8 +27,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {
-                "projectPath": "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj"
+              "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {
+                "projectPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj"
               }
             }
           }
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -504,17 +504,17 @@
         }
       }
     },
-    "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {
+    "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj",
+        "projectUniqueName": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj",
         "projectName": "GestionOrdinateurs.Shared",
-        "projectPath": "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj",
-        "packagesPath": "C:\\Users\\Luc\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\cs\\tp5\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\obj\\",
+        "projectPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj",
+        "packagesPath": "C:\\Users\\xiang\\.nuget\\packages\\",
+        "outputPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Luc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\xiang\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -561,7 +561,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

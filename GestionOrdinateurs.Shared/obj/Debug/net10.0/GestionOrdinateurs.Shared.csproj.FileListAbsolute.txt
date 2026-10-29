@@ -29,3 +29,15 @@ C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-334
 C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\GestionOrdinateurs.Shared.deps.json
 C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\GestionOrdinateurs.Shared.dll
 C:\Users\Luc\AppData\Local\Temp\claude\c--dev-cs-tp5\05fb0dff-fb99-453c-9aa6-3341b7bda156\scratchpad\buildcheck\AuthentificationApi\GestionOrdinateurs.Shared.pdb
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\bin\Debug\net10.0\GestionOrdinateurs.Shared.deps.json
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\bin\Debug\net10.0\GestionOrdinateurs.Shared.dll
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\bin\Debug\net10.0\GestionOrdinateurs.Shared.pdb
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\obj\Debug\net10.0\GestionOrdinateurs.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\obj\Debug\net10.0\GestionOrdinateurs.Shared.AssemblyInfoInputs.cache
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\obj\Debug\net10.0\GestionOrdinateurs.Shared.AssemblyInfo.cs
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\obj\Debug\net10.0\GestionOrdinateurs.Shared.csproj.CoreCompileInputs.cache
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\obj\Debug\net10.0\GestionOrdinateurs.Shared.sourcelink.json
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\obj\Debug\net10.0\GestionOrdinateurs.Shared.dll
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\obj\Debug\net10.0\refint\GestionOrdinateurs.Shared.dll
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\obj\Debug\net10.0\GestionOrdinateurs.Shared.pdb
+D:\dev\cs\GestionOrdinateurs\GestionOrdinateurs.Shared\obj\Debug\net10.0\ref\GestionOrdinateurs.Shared.dll

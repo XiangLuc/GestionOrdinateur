@@ -3315,11 +3315,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Tests\\GestionOrdinateurs.Tests.csproj",
+      "projectUniqueName": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Tests\\GestionOrdinateurs.Tests.csproj",
       "projectName": "GestionOrdinateurs.Tests",
-      "projectPath": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Tests\\GestionOrdinateurs.Tests.csproj",
+      "projectPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Tests\\GestionOrdinateurs.Tests.csproj",
       "packagesPath": "C:\\Users\\xiang\\.nuget\\packages\\",
-      "outputPath": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Tests\\obj\\",
+      "outputPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\xiang\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3335,11 +3335,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.API\\GestionOrdinateurs.API.csproj": {
-              "projectPath": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.API\\GestionOrdinateurs.API.csproj"
+            "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.API\\GestionOrdinateurs.API.csproj": {
+              "projectPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.API\\GestionOrdinateurs.API.csproj"
             },
-            "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {
-              "projectPath": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj"
+            "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {
+              "projectPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj"
             }
           }
         }

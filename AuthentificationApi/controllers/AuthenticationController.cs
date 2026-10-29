@@ -14,12 +14,28 @@ public class AuthenticationController : ControllerBase
     private readonly IConfiguration _configuration;
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly ILogger<AuthenticationController> _logger;
+    private readonly KeycloakAuthService _keycloakAuthService;
 
-    public AuthenticationController(IConfiguration configuration, IHttpClientFactory httpClientFactory, ILogger<AuthenticationController> logger)
+    public AuthenticationController(IConfiguration configuration, IHttpClientFactory httpClientFactory, ILogger<AuthenticationController> logger, KeycloakAuthService keycloakAuthService)
     {
         _configuration = configuration;
         _httpClientFactory = httpClientFactory;
         _logger = logger;
+        _keycloakAuthService = keycloakAuthService;
+    }
+
+    [HttpPost("login-keycloak")]
+    public async Task<IActionResult> LoginKeycloak([FromBody] LoginRequest request)
+    {
+        var token = await _keycloakAuthService.GetTokenAsync(request.Login, request.Password);
+
+        if (token == null)
+        {
+            return Unauthorized("Login ou mot de passe incorrect");
+        }
+
+        _logger.LogInformation($"Token Keycloak généré pour l'utilisateur {request.Login}");
+        return Ok(token);
     }
 
     [HttpPost("login")]

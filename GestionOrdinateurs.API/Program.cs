@@ -1,4 +1,3 @@
-using System.Text;
 using GestionOrdinateurs.API;
 using GestionOrdinateurs.Shared;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -12,7 +11,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowBlazorClient", policy =>
     {
-        policy.WithOrigins("http://localhost:5170")
+        policy.WithOrigins("http://localhost:5000")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -52,9 +51,11 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Configuration JWT
-var jwtKey = builder.Configuration["Jwt:Key"] ?? "";
-var key = Encoding.ASCII.GetBytes(jwtKey);
+// Configuration Keycloak : l'API valide les tokens émis par Keycloak
+var keycloakBaseUrl = builder.Configuration["Keycloak:BaseUrl"];
+var keycloakRealm = builder.Configuration["Keycloak:Realm"];
+var keycloakHttpClient = new HttpClient();
+JsonWebKeySet? keycloakKeys = null;
 
 builder.Services.AddAuthentication(options =>
 {
@@ -64,12 +65,30 @@ builder.Services.AddAuthentication(options =>
 {
     options.RequireHttpsMetadata = false;
     options.SaveToken = true;
+    // Garde les noms de claims de Keycloak ("roles", "preferred_username") sans les convertir
+    options.MapInboundClaims = false;
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateIssuer = false,
-        ValidateAudience = false
+        // Récupère les clés publiques de Keycloak (mises en cache tant que la clé du token est connue)
+        IssuerSigningKeyResolver = (token, securityToken, kid, parameters) =>
+        {
+            if (keycloakKeys == null || !keycloakKeys.Keys.Any(k => k.Kid == kid))
+            {
+                var json = keycloakHttpClient
+                    .GetStringAsync($"{keycloakBaseUrl}/realms/{keycloakRealm}/protocol/openid-connect/certs")
+                    .GetAwaiter().GetResult();
+                keycloakKeys = new JsonWebKeySet(json);
+            }
+            return keycloakKeys.GetSigningKeys();
+        },
+        ValidateIssuer = true,
+        ValidIssuer = builder.Configuration["Keycloak:ValidIssuer"],
+        ValidateAudience = true,
+        ValidAudience = "account",
+        // Les rôles sont dans le claim "roles" (mapper Keycloak) et le nom dans "preferred_username"
+        RoleClaimType = "roles",
+        NameClaimType = "preferred_username"
     };
     options.Events = new JwtBearerEvents
         {

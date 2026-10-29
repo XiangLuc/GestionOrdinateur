@@ -23,8 +23,8 @@ COPY --from=build /app/out ./
 # Set environment variables if needed (e.g., ASPNETCORE_ENVIRONMENT)
 ENV ASPNETCORE_ENVIRONMENT=Development
 
-# Expose port 5157
-EXPOSE 5157
+# Expose port 5217
+EXPOSE 5217
 
 # Define the entry point
 ENTRYPOINT ["dotnet", "AuthentificationApi.dll"]

@@ -10,6 +10,7 @@
 <h3>Connexion</h3>
 
 <InputText @bind-Value="UserLogin" class="form-control" placeholder="Login" />
+<InputText @bind-Value="UserPassword" type="password" class="form-control mt-2" placeholder="Mot de passe" />
 
 <button class="btn btn-primary mt-2" @onclick="SeConnecter">
     Se connecter
@@ -23,17 +24,19 @@
 @code
 {
     private string UserLogin = "";
+    private string UserPassword = "";
     private string Erreur = "";
 
     private async Task SeConnecter()
     {
         Erreur = "";
         var client = Factory.CreateClient("AuthentificationApi");
-        var response = await client.PostAsync($"authentication/login?login={UserLogin}", null);
+
+        var response = await client.PostAsJsonAsync("authentication/login-keycloak", new { Login = UserLogin, Password = UserPassword });
 
         if (!response.IsSuccessStatusCode)
         {
-            Erreur = $"L'utilisateur {UserLogin} n'existe pas";
+            Erreur = "Login ou mot de passe incorrect";
             return;
         }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {}
+    "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {}
   },
   "projects": {
-    "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {
+    "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj",
+        "projectUniqueName": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj",
         "projectName": "GestionOrdinateurs.Shared",
-        "projectPath": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj",
+        "projectPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj",
         "packagesPath": "C:\\Users\\xiang\\.nuget\\packages\\",
-        "outputPath": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\obj\\",
+        "outputPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\xiang\\AppData\\Roaming\\NuGet\\NuGet.Config"

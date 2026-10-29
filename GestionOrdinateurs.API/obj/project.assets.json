@@ -3307,11 +3307,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.API\\GestionOrdinateurs.API.csproj",
+      "projectUniqueName": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.API\\GestionOrdinateurs.API.csproj",
       "projectName": "GestionOrdinateurs.API",
-      "projectPath": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.API\\GestionOrdinateurs.API.csproj",
+      "projectPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.API\\GestionOrdinateurs.API.csproj",
       "packagesPath": "C:\\Users\\xiang\\.nuget\\packages\\",
-      "outputPath": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.API\\obj\\",
+      "outputPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\xiang\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3327,8 +3327,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {
-              "projectPath": "d:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj"
+            "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj": {
+              "projectPath": "D:\\dev\\cs\\GestionOrdinateurs\\GestionOrdinateurs.Shared\\GestionOrdinateurs.Shared.csproj"
             }
           }
         }
