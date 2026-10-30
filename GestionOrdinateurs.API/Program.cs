@@ -51,7 +51,6 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Configuration Keycloak : l'API valide les tokens émis par Keycloak
 var keycloakBaseUrl = builder.Configuration["Keycloak:BaseUrl"];
 var keycloakRealm = builder.Configuration["Keycloak:Realm"];
 var keycloakHttpClient = new HttpClient();
@@ -65,12 +64,10 @@ builder.Services.AddAuthentication(options =>
 {
     options.RequireHttpsMetadata = false;
     options.SaveToken = true;
-    // Garde les noms de claims de Keycloak ("roles", "preferred_username") sans les convertir
     options.MapInboundClaims = false;
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuerSigningKey = true,
-        // Récupère les clés publiques de Keycloak (mises en cache tant que la clé du token est connue)
         IssuerSigningKeyResolver = (token, securityToken, kid, parameters) =>
         {
             if (keycloakKeys == null || !keycloakKeys.Keys.Any(k => k.Kid == kid))
@@ -86,7 +83,6 @@ builder.Services.AddAuthentication(options =>
         ValidIssuer = builder.Configuration["Keycloak:ValidIssuer"],
         ValidateAudience = true,
         ValidAudience = "account",
-        // Les rôles sont dans le claim "roles" (mapper Keycloak) et le nom dans "preferred_username"
         RoleClaimType = "roles",
         NameClaimType = "preferred_username"
     };
